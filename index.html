@@ -1,4 +1,4 @@
-<!-- BigBanonos Homepage (Sleek Consultant Version) -->
+<!-- BigBanonos Homepage (Sleek Consultant Version with Enhancements) -->
 <!-- Optimized for GitHub Pages -->
 <html lang="en">
 <head>
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BigBanonos</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
     body {
       background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
@@ -44,6 +45,10 @@
       text-decoration: none;
       color: #f9d342;
       font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
     }
     ul {
       padding-left: 20px;
@@ -54,25 +59,40 @@
       font-size: 1.2rem;
       color: #aaa;
     }
+    footer {
+      text-align: center;
+      margin-top: 100px;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .banana {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 2rem;
+      opacity: 0.3;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
   <main class="main-content">
-    <h1>BigBanonos</h1>
-    <p class="tagline">Brooklyn · Park Slope · Consultant</p>
+    <h1 data-aos="fade-up">BigBanonos</h1>
+    <p class="tagline" data-aos="fade-up" data-aos-delay="100">Brooklyn · Park Slope · Consultant</p>
 
-    <nav>
+    <nav data-aos="fade-up" data-aos-delay="200">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-delay="300">
       <h2>About</h2>
       <p>BigBanonos is an independent creative consultant based in Brooklyn. Built for adaptability, clarity, and forward momentum. This is a compact, efficient, data-forward operation offering hands-on support, visual precision, and useful perspective across digital channels.</p>
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up" data-aos-delay="400">
       <h2>Services</h2>
       <ul>
         <li>Lightweight marketing systems that don’t break</li>
@@ -82,11 +102,22 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up" data-aos-delay="500">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:hello@bigbanonos.com">hello@bigbanonos.com</a></p>
+      <p>Email: <a href="mailto:hello@bigbanonos.com" style="color: #f9d342;">hello@bigbanonos.com</a></p>
       <p>Location: Brooklyn, NY (remote or by appointment)</p>
     </section>
   </main>
+
+  <footer>
+    <p>"The last thing I need is more money." — BigBanonos</p>
+  </footer>
+
+  <div class="banana">🍌</div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
 </body>
 </html>
