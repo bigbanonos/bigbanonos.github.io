@@ -1,4 +1,4 @@
-<!-- BigBanonos Homepage (Sleek Consultant Version with Enhancements) -->
+<!-- BigBanonos Homepage (Sleek Consultant Version with Enhancements + Signals + Image Banner) -->
 <!-- Optimized for GitHub Pages -->
 <html lang="en">
 <head>
@@ -59,6 +59,37 @@
       font-size: 1.2rem;
       color: #aaa;
     }
+    .signals {
+      background-color: #1e1e1e;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+    .signals article {
+      margin-bottom: 24px;
+      border-left: 4px solid #f9d342;
+      padding-left: 16px;
+    }
+    .signals article h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: #f9d342;
+    }
+    .signals article p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .banner-section {
+      margin-top: 60px;
+    }
+    .banner-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 40px;
+      border-radius: 12px;
+    }
     footer {
       text-align: center;
       margin-top: 100px;
@@ -84,6 +115,7 @@
     <nav data-aos="fade-up" data-aos-delay="200">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#signals">Signals</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -102,7 +134,29 @@
       </ul>
     </section>
 
-    <section id="contact" data-aos="fade-up" data-aos-delay="500">
+    <section id="signals" class="signals" data-aos="fade-up" data-aos-delay="450">
+      <h2>Signals</h2>
+      <article>
+        <h3>MLB's Opening Day and the Cardinals’ Depth</h3>
+        <p>Baseball season begins with high expectations for the Cardinals’ young core. Feedly + ChatGPT summary coming soon.</p>
+      </article>
+      <article>
+        <h3>Pitchfork x Product Hunt x Vibes</h3>
+        <p>Best music drops this week from under-the-radar artists and the digital platforms pushing them forward.</p>
+      </article>
+      <article>
+        <h3>TechCrunch AI Panel Takeaways</h3>
+        <p>Not just hype—clear use cases, wild quotes, and one slide you won’t stop thinking about.</p>
+      </article>
+    </section>
+
+    <section class="banner-section" data-aos="fade-up" data-aos-delay="500">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Busch_Stadium_2023.jpg/1600px-Busch_Stadium_2023.jpg" alt="Busch Stadium">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Woody_Guthrie_2.jpg/1600px-Woody_Guthrie_2.jpg" alt="Vintage music">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Tokyo_dome_inside_2011.jpg/1600px-Tokyo_dome_inside_2011.jpg" alt="Tokyo Dome">
+    </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-delay="600">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:hello@bigbanonos.com" style="color: #f9d342;">hello@bigbanonos.com</a></p>
       <p>Location: Brooklyn, NY (remote or by appointment)</p>
